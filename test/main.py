@@ -20,3 +20,8 @@ class BattleMap:
             for columns in rows:
                 print(columns, end=' ')
             print('')
+
+
+class GameMain:
+    # 接受一张地图以及某些规则
+    pass
