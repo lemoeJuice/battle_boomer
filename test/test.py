@@ -1,9 +1,9 @@
-from main import BattleMap, InputStream, GameMain
+from main import MapData, Battle, InputStream, GameMain
 
 
 def main():
     testdata = [[1, 1], [1, 1]]
-    map = BattleMap(testdata)
+    map = Battle(MapData(testdata))
     input = InputStream()
     game = GameMain(map, input)
     game.start()
