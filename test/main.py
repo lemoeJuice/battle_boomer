@@ -42,6 +42,11 @@ class InputStream:
         return input("请输入指令：").strip()
 
 
+class OutputStream:
+    # 用来在控制台窗口中分块输出，接受内容以及起始位置组成每行的输出
+    pass
+
+
 class GameMain:
     # 游戏界面分为主窗口和控制台输入部分
     # 接受一张地图以及某些规则来生成游戏界面，以及接受输入流对象来控制游戏行为
@@ -56,6 +61,7 @@ class GameMain:
         print(f'第 {self.round_count} 回合 / 剩余敌方飞机数量: {self.map.plane_count}')
         self.map.show()
         # 在这个函数中更新显示，使用字符绘图之后调用输入流在最后处理用户输入
+        # 使用output stream
 
     def start(self):
         while True:
