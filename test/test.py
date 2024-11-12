@@ -1,11 +1,11 @@
-from main import MapData, Battle, InputStream, GameMain
+from client.main import *
 
 
 def main():
     testdata = [[1, 1], [1, 1]]
     map = Battle(MapData(testdata))
-    input = InputStream()
-    game = GameMain(map, input)
+    output=OutputStream()
+    game = GameMain(map, output)
     game.start()
 
 
